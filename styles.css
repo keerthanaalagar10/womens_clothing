@@ -1,0 +1,328 @@
+/* Custom styles to complement Tailwind CSS */
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom transitions */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for product cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styles */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom animation for hero section */
+.hero-content {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom styles for category cards */
+.category-card {
+    overflow: hidden;
+}
+
+.category-card img {
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Custom styles for testimonials */
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for Instagram feed */
+.instagram-item {
+    overflow: hidden;
+}
+
+.instagram-item img {
+    transition: transform 0.5s ease;
+}
+
+.instagram-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Custom styles for email popup */
+#email-popup {
+    backdrop-filter: blur(5px);
+    transition: opacity 0.3s ease;
+}
+
+/* Custom styles for form inputs */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #FF1493; /* primary */
+    box-shadow: 0 0 0 3px rgba(255, 20, 147, 0.2);
+}
+
+/* Custom styles for pagination */
+.pagination-item {
+    transition: all 0.3s ease;
+}
+
+.pagination-item:hover {
+    background-color: rgba(255, 20, 147, 0.2); /* primary with opacity */
+    color: #FF1493; /* primary */
+}
+
+/* Custom styles for filter sidebar */
+.filter-checkbox:checked + span {
+    background-color: #FF1493; /* primary */
+    border-color: #FF1493; /* primary */
+}
+
+/* Custom styles for product badges */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-sale {
+    background-color: #FF1493; /* primary */
+    color: white;
+}
+
+.badge-new {
+    background-color: #60a5fa; /* blue-400 */
+    color: white;
+}
+
+/* Custom styles for quantity controls */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.quantity-control button {
+    width: 32px;
+    height: 32px;
+    background-color: #f9fafb;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-control button:hover {
+    background-color: #f3f4f6;
+}
+
+.quantity-control input {
+    width: 40px;
+    height: 32px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Custom styles for notification */
+.notification {
+    z-index: 50;
+    transition: transform 0.3s ease;
+}
+
+/* Custom styles for FAQ accordion */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Custom styles for product image gallery */
+.product-thumbnail {
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+/* Custom styles for wishlist button */
+.wishlist-toggle {
+    transition: all 0.3s ease;
+}
+
+.wishlist-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Custom styles for social media icons */
+.social-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* Custom styles for footer */
+.footer-link {
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #FF1493; /* primary */
+}
+
+/* Custom styles for about page sections */
+.about-section {
+    position: relative;
+}
+
+.about-section::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #FF1493; /* primary */
+}
+
+/* Custom styles for team member cards */
+.team-member {
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom styles for contact info cards */
+.contact-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for map container */
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for business hours */
+.business-hours li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #e5e7eb;
+}
+
+.business-hours li:last-child {
+    border-bottom: none;
+}
+
+/* Custom styles for checkout form */
+.checkout-section {
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+/* Custom styles for payment method selection */
+.payment-method {
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.payment-method.selected {
+    border-color: #FF1493; /* primary */
+    background-color: rgba(255, 20, 147, 0.1); /* primary with low opacity */
+}
+
+/* Custom styles for order summary */
+.order-summary {
+    position: sticky;
+    top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-content h1 {
+        font-size: 1.875rem;
+    }
+    
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .instagram-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
