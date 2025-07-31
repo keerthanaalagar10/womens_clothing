@@ -1,7 +1,7 @@
-# Elegance - Women's Clothing E-commerce Website
+# Audora Fashions - Women's Clothing E-commerce Website
 
 ## Overview
-Elegance is a fully responsive e-commerce website for women's clothing built with HTML, CSS, Tailwind CSS, and JavaScript. The website features a pastel color scheme and uses the Poppins font family throughout.
+Audora Fashions is a fully responsive e-commerce website for women's clothing built with HTML, CSS, Tailwind CSS, and JavaScript. The website features a pastel color scheme and uses the Poppins font family throughout.
 
 ## Pages
 1. **Home Page (index.html)** - Features hero section, categories, best sellers, testimonials, Instagram feed, and email signup.
